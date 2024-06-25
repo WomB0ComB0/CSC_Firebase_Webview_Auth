@@ -9,10 +9,11 @@ public class AccessDataViewModel {
 
 	private final StringProperty userName = new SimpleStringProperty();
 	private final StringProperty userMajor = new SimpleStringProperty();
+	private final StringProperty userAge = new SimpleStringProperty();
 	private final ReadOnlyBooleanWrapper writePossible = new ReadOnlyBooleanWrapper();
 
 	public AccessDataViewModel() {
-		writePossible.bind(userName.isNotEmpty().and(userMajor.isNotEmpty()));
+		writePossible.bind(userName.isNotEmpty().and(userMajor.isNotEmpty()).and(userAge.isNotEmpty()));
 	}
 
 	public StringProperty userNameProperty() {
@@ -21,6 +22,10 @@ public class AccessDataViewModel {
 
 	public StringProperty userMajorProperty() {
 		return userMajor;
+	}
+
+	public StringProperty userAgeProperty() {
+		return userAge;
 	}
 
 	public ReadOnlyBooleanProperty isWritePossibleProperty() {

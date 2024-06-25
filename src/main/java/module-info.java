@@ -21,5 +21,4 @@ module com.example.csc325_firebase_webview_auth {
     exports com.example.csc325_firebase_webview_auth.viewmodel;
     exports com.example.csc325_firebase_webview_auth.view;
     exports com.example.csc325_firebase_webview_auth.model;
-    exports com.example.csc325_firebase_webview_auth.controller;
 }

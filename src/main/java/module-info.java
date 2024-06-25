@@ -16,7 +16,7 @@ module com.example.csc325_firebase_webview_auth {
 
     opens com.example.csc325_firebase_webview_auth.viewmodel to jdk.jsobject;
 
-    exports com.example.csc325_firebase_webview_auth.viewmodel;
+    exports com.exampl`e.csc325_firebase_webview_auth.viewmodel;
 
     opens com.example.csc325_firebase_webview_auth.view;
 

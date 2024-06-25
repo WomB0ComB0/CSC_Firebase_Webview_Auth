@@ -25,4 +25,13 @@ public class AccessFBViewController {
     stage.setScene(new Scene(root));
     stage.show();
   }
+
+  @FXML
+    private void showWebView() throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/WebContainer.fxml"));
+        Stage stage = new Stage();
+        stage.setScene(new Scene(root));
+        stage.show();
+    }
+
 }

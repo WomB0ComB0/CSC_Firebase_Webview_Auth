@@ -1,7 +1,7 @@
 module com.example.csc325_firebase_webview_auth {
     requires javafx.base;
     requires transitive javafx.controls;
-    requires transitive javafx.fxml;    
+    requires transitive javafx.fxml;
     requires javafx.graphics;
     requires jdk.jsobject;
     requires java.xml;
@@ -15,13 +15,11 @@ module com.example.csc325_firebase_webview_auth {
     requires com.google.auth;
 
     opens com.example.csc325_firebase_webview_auth.viewmodel to jdk.jsobject;
+    opens com.example.csc325_firebase_webview_auth.view to javafx.fxml;
+    opens com.example.csc325_firebase_webview_auth.controller to javafx.fxml;
 
-    exports com.exampl`e.csc325_firebase_webview_auth.viewmodel;
-
-    opens com.example.csc325_firebase_webview_auth.view;
-
+    exports com.example.csc325_firebase_webview_auth.viewmodel;
     exports com.example.csc325_firebase_webview_auth.view;
     exports com.example.csc325_firebase_webview_auth.model;
-
-    opens com.example.csc325_firebase_webview_auth.model;
+    exports com.example.csc325_firebase_webview_auth.controller;
 }

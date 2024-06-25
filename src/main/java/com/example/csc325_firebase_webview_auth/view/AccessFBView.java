@@ -108,9 +108,9 @@ public class AccessFBView {
         }
     }
 
-        public boolean readFirebase()
-         {
-             key = false;
+    public boolean readFirebase()
+    {
+        key = false;
 
         //asynchronously retrieve all documents
         ApiFuture<QuerySnapshot> future =  App.fstore.collection("References").get();
@@ -140,14 +140,14 @@ public class AccessFBView {
             }
             else
             {
-               System.out.println("No data");
+                System.out.println("No data");
             }
             key=true;
 
         }
         catch (InterruptedException | ExecutionException ex)
         {
-             ex.printStackTrace();
+            ex.printStackTrace();
         }
         return key;
     }

@@ -97,7 +97,7 @@ public class WebContainerController implements Initializable {
     @FXML
     private void swithcBackStage(ActionEvent e){
         try {
-            App.setRoot("/files/AccessFBView.fxml");
+            App.setRoot("/fxml/AccessFBView.fxml");
         } catch (IOException ex) {
             Logger.getLogger(WebContainerController.class.getName()).log(Level.SEVERE, null, ex);
         }

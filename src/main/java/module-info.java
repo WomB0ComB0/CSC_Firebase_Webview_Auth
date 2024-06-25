@@ -16,7 +16,6 @@ module com.example.csc325_firebase_webview_auth {
 
     opens com.example.csc325_firebase_webview_auth.viewmodel to jdk.jsobject;
     opens com.example.csc325_firebase_webview_auth.view to javafx.fxml;
-    opens com.example.csc325_firebase_webview_auth.controller to javafx.fxml;
 
     exports com.example.csc325_firebase_webview_auth.viewmodel;
     exports com.example.csc325_firebase_webview_auth.view;

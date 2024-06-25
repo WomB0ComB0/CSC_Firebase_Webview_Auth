@@ -2,28 +2,28 @@
 
 ## Link it to Firebase Cloud and Auth
 
-- [ ] Link the application to Firebase Cloud and Authentication
+- [x] Link the application to Firebase Cloud and Authentication
 
 ## Create a Splash Screen
 
-- [ ] Create a splash screen for the application
+- [x] Create a splash screen for the application
 
 ## Create Registration/Sign-In Forms
 
-- [ ] Create registration/sign-in forms
-- [ ] Link the forms to the menu
+- [x] Create registration/sign-in forms
+- [x] Link the forms to the menu
 
 ## Modify GUI with CSS
 
-- [ ] Modify the GUI to match your design from the previous assignment with CSS
+- [x] Modify the GUI to match your design from the previous assignment with CSS
 
 ## Complete Menu Implementation
 
-- [ ] Complete the menu implementation
+- [x] Complete the menu implementation
 
 ## Redirect Output to TableView
 
-- [ ] Redirect the output so it is displayed in the TableView
+- [x] Redirect the output so it is displayed in the TableView
 
 ## Enable Picture Upload to Firebase Storage
 
@@ -31,5 +31,5 @@
 
 ## Push to GitHub
 
-- [ ] Push the project to your own GitHub repository
-- [ ] Share the URL
+- [x] Push the project to your own GitHub repository
+- [x] Share the URL

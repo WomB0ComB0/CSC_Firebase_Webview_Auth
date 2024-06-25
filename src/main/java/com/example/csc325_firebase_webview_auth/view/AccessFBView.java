@@ -86,6 +86,9 @@ public class AccessFBView {
         registerUser();
     }
 
+    @FXML
+    private void uploadPicture(ActionEvent event) {}
+
      @FXML
     private void switchToSecondary() throws IOException {
         App.setRoot("/fxml/WebContainer.fxml");

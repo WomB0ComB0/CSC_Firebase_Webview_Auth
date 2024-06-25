@@ -7,28 +7,28 @@ import javafx.beans.property.StringProperty;
 
 public class AccessDataViewModel {
 
-	private final StringProperty userName = new SimpleStringProperty();
-	private final StringProperty userMajor = new SimpleStringProperty();
-	private final StringProperty userAge = new SimpleStringProperty();
-	private final ReadOnlyBooleanWrapper writePossible = new ReadOnlyBooleanWrapper();
+    private final StringProperty userName = new SimpleStringProperty();
+    private final StringProperty userMajor = new SimpleStringProperty();
+    private final StringProperty userAge = new SimpleStringProperty();
+    private final ReadOnlyBooleanWrapper writePossible = new ReadOnlyBooleanWrapper();
 
-	public AccessDataViewModel() {
-		writePossible.bind(userName.isNotEmpty().and(userMajor.isNotEmpty()).and(userAge.isNotEmpty()));
-	}
+    public AccessDataViewModel() {
+        writePossible.bind(userName.isNotEmpty().and(userMajor.isNotEmpty()).and(userAge.isNotEmpty()));
+    }
 
-	public StringProperty userNameProperty() {
-		return userName;
-	}
+    public StringProperty userNameProperty() {
+        return userName;
+    }
 
-	public StringProperty userMajorProperty() {
-		return userMajor;
-	}
+    public StringProperty userMajorProperty() {
+        return userMajor;
+    }
 
-	public StringProperty userAgeProperty() {
-		return userAge;
-	}
+    public StringProperty userAgeProperty() {
+        return userAge;
+    }
 
-	public ReadOnlyBooleanProperty isWritePossibleProperty() {
-		return writePossible.getReadOnlyProperty();
-	}
+    public ReadOnlyBooleanProperty isWritePossibleProperty() {
+        return writePossible.getReadOnlyProperty();
+    }
 }

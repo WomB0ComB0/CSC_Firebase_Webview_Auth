@@ -61,7 +61,7 @@ public class AccessFBView {
         AccessDataViewModel accessDataViewModel = new AccessDataViewModel();
         nameField.textProperty().bindBidirectional(accessDataViewModel.userNameProperty());
         majorField.textProperty().bindBidirectional(accessDataViewModel.userMajorProperty());
-        writeButton.disableProperty().bind(accessDataViewModel.isWritePossibleProperty().not());
+        writeButton.disableProperty().bind(accessDataViewModel.isWritePossibleProperty());
 
         Age.setCellValueFactory(
                 new PropertyValueFactory<Person, Integer>("Age"));

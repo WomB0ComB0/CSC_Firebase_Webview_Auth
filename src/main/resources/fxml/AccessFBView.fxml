@@ -63,10 +63,11 @@
             <VBox prefHeight="535.0" prefWidth="551.0">
                <children>
                   <TextArea fx:id="outputField" prefHeight="184.0" prefWidth="514.0" />
-                  <TableView prefHeight="351.0" prefWidth="514.0">
+                  <TableView fx:id="tableViewPerson" prefHeight="351.0" prefWidth="514.0">
                      <columns>
-                        <TableColumn prefWidth="75.0" text="C1" />
-                        <TableColumn prefWidth="75.0" text="C2" />
+                        <TableColumn fx:id="Name" prefWidth="75.0" text="Name" />
+                        <TableColumn fx:id="Major" prefWidth="75.0" text="Major" />
+                        <TableColumn fx:id="Age" prefWidth="75.0" text="Age" />
                      </columns>
                   </TableView>
                </children>
